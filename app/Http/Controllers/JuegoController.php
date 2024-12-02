@@ -37,31 +37,4 @@ class JuegoController extends Controller
         return response()->json(['message' => 'Resultado guardado con éxito.']);
     }
     
-    public function compruebaGanador($tablero)
-    {
-      
-        if ($this->verificarHorizontal($tablero) || $this->verificarVertical($tablero) || $this->verificarDiagonal($tablero)) {
-            return true;
-        }
-        
-        return false;
-    }
-
-    private function verificarHorizontal($tablero)
-    {
-        
-        return false;
-    }
-
-    private function verificarVertical($tablero)
-    {
-        
-        return false;
-    }
-
-    private function verificarDiagonal($tablero)
-    {
-    
-        return false;
-    }
 }
